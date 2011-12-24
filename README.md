@@ -6,14 +6,16 @@ There is a delay due to the fact that the device waits for the user to complete 
 
 I wrote a simple script that detects whether the device is touched without moving. This alternative "fastclick" event fires much faster.
 
+Demo
+----
+* http://sandbox.juurlink.org/fastclick/
+
 Results
 -------
-
 * "fast" click event: 60ms
 * "normal" click event: 500ms
 
 
 Compatibility
 -------------
-
-Tested in Webkit only.
+Tested in Safari browser only.
