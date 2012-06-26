@@ -43,13 +43,13 @@ document.addEventListener('touchstart', function(){
     document.addEventListener("touchend", function (e) {
 
         if (touchClick) {
+            touchClick = false;
 
             // Send fast click.
             var event = document.createEvent("CustomEvent");
             event.initCustomEvent("fastclick", true, true, e.target);
 
             e.target.dispatchEvent(event);
-            touchClick = false;
         }
     }, false);
 
